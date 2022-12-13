@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Use meta to modify the charset, name, and content -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../css/serenade_showcase.css">
+
+    <link rel="icon" type="image/png" href="../assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicon-16x16.png" sizes="16x16" />
+
+	<title>serlindipity - Serenade</title>
+</head>
+<body>
+
+    <header>
+
+        <img src="../assets/serlindipity_logo.png">
+
+
+        <div class="nav_links">
+            <a href="../index.html">Home</a>
+            <a href="about_us.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a class="active" href="serenade.html">Serenade</a>
+            <a href="dream.html">Dream</a>
+        </div>
+
+    </header>
+
+    <div class="slideshow">
+        <div class="slide animate one" style="display: flex;">
+
+            <video src="../assets/video1.mp4" controls>
+
+            </video>
+
+            <div class="text">
+                <h1>You're Still<br>the One</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <h3>1/3</h3>
+            </div>
+        </div>
+
+        <div class="slide animate two">
+
+            <video src="../assets/video1.mp4" controls>
+
+            </video>
+
+            <div class="text">
+                <h1>Say You<br>Won't Let Go</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <h3>2/3</h3>
+            </div>
+        </div>
+
+        <div class="slide animate three">
+
+            <video src="../assets/video1.mp4" controls>
+
+            </video>
+
+            <div class="text">
+                <h1>The One That<br>Got Away</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <h3>3/3</h3>
+            </div>
+        </div>
+
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+    </div>
+
+    <script src="../javascript/slideshow_manual.js"></script>
+
+</body>
+</html>

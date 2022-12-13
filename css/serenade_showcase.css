@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif Caption", serif;
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+header img {
+  width: 15%;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  header img {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  header img {
+    width: 30%;
+  }
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+header .nav_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header a {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  header a {
+    font-size: 13px;
+  }
+}
+
+header a.active {
+  border: 2px solid white;
+}
+
+header a:before {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+header a a:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: gray;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  transition: all 0.5s;
+}
+
+header a:hover:before {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+header a:hover:after {
+  width: 50%;
+  transform: translateX(-100%);
+}
+
+.slideshow {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #141414;
+}
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .slideshow {
+    height: auto;
+  }
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/serenade_bg.png") no-repeat center center;
+  background-size: cover;
+}
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .slide {
+    height: auto;
+    flex-direction: column;
+    padding: 75px 0;
+  }
+}
+
+.slide video {
+  width: 50%;
+  margin-right: 40px;
+}
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .slide video {
+    width: 80%;
+    margin-right: 0;
+  }
+}
+
+.text {
+  width: 25%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0.1px solid rgba(216, 216, 216, 0.4431372549);
+  position: relative;
+}
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .text {
+    width: 80%;
+  }
+}
+
+.text h1 {
+  width: 100%;
+  font-family: "Dancing Script", cursive;
+  font-size: 75px;
+  line-height: 75px;
+  position: absolute;
+  top: -100px;
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .text h1 {
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .text h1 {
+    font-size: 50px;
+    line-height: 50px;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.text p {
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 70px;
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .text p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 600px) {
+  .text p {
+    font-size: 17px;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .text p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+.text h3 {
+  position: absolute;
+  font-size: 25px;
+  bottom: -40px;
+}
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .text h3 {
+    font-size: 17px;
+    bottom: -25px;
+  }
+}
+
+.animate {
+  -webkit-animation-name: transition;
+  -webkit-animation-duration: 1s;
+  animation-name: transition;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes transition {
+  from {
+    transform: scale(1.1) rotateY(10deg);
+  }
+  to {
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+@keyframes transition {
+  from {
+    transform: scale(1.1) rotateY(10deg);
+  }
+  to {
+    transform: scale(1) rotateY(0deg);
+  }
+}
+.prev,
+.next {
+  cursor: pointer;
+  top: 50%;
+  position: absolute;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0 8px 8px 0;
+  background: rgba(173, 216, 230, 0.1);
+}
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  .prev,
+.next {
+    font-size: 17px;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .prev,
+.next {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.next {
+  right: 0;
+  border-radius: 8px 0 0 8px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(193, 193, 193, 0.3);
+}/*# sourceMappingURL=serenade_showcase.css.map */

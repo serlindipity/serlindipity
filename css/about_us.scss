@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+@mixin media_query ($min-width, $max-width) {
+	@media screen and (min-width:$min-width) and (max-width:$max-width) {
+
+		@content;
+	}
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif Caption', serif;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+header img {
+    width: 15%;
+    margin-bottom: 10px;
+
+    @include media_query(601px, 900px){
+        width: 20%;
+    }
+
+    @include media_query(0px, 600px){
+        width: 30%;
+    }
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+header .nav_links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header a {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border:1px solid transparent; 
+   -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+
+    @include media_query(0px, 700px){
+        font-size: 13px;
+    }
+}
+
+header a.active {
+    border: 2px solid white;
+}
+  
+header a:before {
+content: "";
+width: 0;
+height: 3px;
+background-color: #ffffff;
+position: absolute;
+top: 120%;
+left: 0;
+transition: all 0.5s;
+}
+
+header a a:after {
+content: "";
+width: 0;
+height: 3px;
+background-color: gray;
+position: absolute;
+top: 120%;
+right: 0;
+transition: all 0.5s;
+}
+
+header a:hover:before {
+width: 50%;
+transform: translateX(100%);
+}
+
+header a:hover:after {
+width: 50%;
+transform: translateX(-100%);
+}
+
+.about_us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+
+    @include media_query(0px, 900px){
+        flex-direction: column-reverse;
+        height: auto;
+    }
+}
+
+.get_to_know {
+    width: 60%;
+    height: 100%;
+    background-color: #535253;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include media_query(0px, 900px){
+        width: 100%;
+        padding: 50px 0;
+    }
+}
+
+.get_to_know img {
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    width: 60%;
+    background-color: #373737;
+    border-radius: 30px;
+}
+
+.details img {
+    margin-top: -100px;
+    margin-bottom: 0;
+    width: 25%;
+
+    @include media_query(0px, 500px){
+        width: 30%;
+        margin-top: -80px;
+    }
+}
+
+.details p {
+    margin-top: 50px;
+
+    @include media_query(0px, 500px){
+        font-size: 14px;
+    }
+}
+
+.right_image {
+    width: 50%;
+    height: 100%;
+    background: url("../assets/erlin_film.png") no-repeat center center;
+    background-size: contain;
+    background-color: #141414;
+
+    @include media_query(701px, 900px){
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+    }
+
+    @include media_query(601px, 700px){
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+    }
+
+    @include media_query(501px, 600px){
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+    }
+
+    @include media_query(401px, 500px){
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    @include media_query(0px, 400px){
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+    }
+}
