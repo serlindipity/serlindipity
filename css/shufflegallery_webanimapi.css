@@ -1,0 +1,27 @@
+/* SHUFFLE GALLERY WEB ANIMATION API - CSS DESIGN  */
+/* CSS design for the main section */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+/* CSS design for the items in main section */
+.item {
+  cursor: pointer;
+  height: 30vh;
+  object-fit: cover;
+  object-position: left top;
+  width: 100%;
+  border-radius: 0.6rem;
+  transition: all 0.5s;
+}
+/* Making the shuffle gallery responsive */
+@media(max-width: 450px) {
+  main {
+    grid-column-gap: 0.3rem;
+  }
+  .item {
+    object-position: center;
+  }
+}

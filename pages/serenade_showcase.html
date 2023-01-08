@@ -1,81 +1,84 @@
+<!-- SERENADE EXHIBIT PAGE -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 	<!-- Use meta to modify the charset, name, and content -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- CSS link -->
 	<link rel="stylesheet" href="../css/serenade_showcase.css">
-
+    <!-- Logo for website -->
     <link rel="icon" type="image/png" href="../assets/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="../assets/favicon-16x16.png" sizes="16x16" />
-
+    <!-- Page Title -->
 	<title>serlindipity - Serenade</title>
 </head>
 <body>
-
+    <!-- Header -->
     <header>
-
+        <!-- Logo -->
         <img src="../assets/serlindipity_logo.png">
-
-
-        <div class="nav_links">
-            <a href="../index.html">Home</a>
-            <a href="about_us.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a class="active" href="serenade.html">Serenade</a>
-            <a href="dream.html">Dream</a>
+        <!-- Navigation links -->
+        <div class="nav_links"> <!-- Div containing all the navigation links -->
+            <a href="../index.html">Home</a> <!-- Home nav link to navigate to homepage -->
+            <a href="about_us.html">About</a> <!-- About nav link to navigate to about page -->
+            <a href="gallery.html">Gallery</a> <!-- Gallery nav link to navigate to the photography exhibit page -->
+            <a class="active" href="serenade.html">Serenade</a> <!-- Serenade nav link to navigate to the page for song covers -->
+            <a href="dream.html">Dream</a> <!-- Dream nav link to navigate to the page dedicated for my career -->
         </div>
-
     </header>
-
-    <div class="slideshow">
-        <div class="slide animate one" style="display: flex;">
-
-            <video src="../assets/video1.mp4" controls>
-
-            </video>
-
-            <div class="text">
-                <h1>You're Still<br>the One</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                <h3>1/3</h3>
+    <!-- Short song covers slideshow -->
+    <div class="slideshow"> <!-- Div containing all the song cover videos & the class for slideshow -->
+        <!-- Song cover #1 -->
+        <div class="slide animate one" style="display: flex;"> <!-- Linking the class slide animate one & applying some css layout -->
+            <!-- Video -->
+            <video src="../assets/you're still the one.mp4" controls></video> <!-- Linking the video -->
+            <!-- Song cover details-->
+            <div class="text"> <!-- Div containing texts & text class -->
+                <h1>You're Still<br>the One</h1> <!-- Title -->
+                <p>I dedicate this song cover for my parents. My parents have recently celebrated their 25th Wedding Anniversary           
+                    last May. I look up to both of them, and being their daughter is one of my greatest blessings in life. One day                    <!-- Short Description -->
+                    I want to have the same relationship that they have. Just like the lyrics says <i> 'You're still the one I want for
+                    life'</i>, I want my future partner to love me like how my dad continues to love my mom throughout the years of being together.
+                </p>
+                <h3>1/3</h3> <!-- Slide number indicator -->
             </div>
         </div>
-
-        <div class="slide animate two">
-
-            <video src="../assets/video1.mp4" controls>
-
-            </video>
-
-            <div class="text">
-                <h1>Say You<br>Won't Let Go</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                <h3>2/3</h3>
+        <!-- Song cover #2 -->
+        <div class="slide animate two"> <!-- Linking the class slide animate two -->
+            <!-- Video -->
+            <video src="../assets/say you won't let go.mp4" controls></video> <!-- Linking the video -->
+            <!-- Song cover details-->
+            <div class="text"> <!-- Div containing texts & text class -->
+                <h1>Say You<br>Won't Let Go</h1> <!-- Title -->
+                <p>This song has always been my favorite. The bridge's lyrics in particular <i>'I wanna live with you, even when we're ghosts, 
+                   'cause you were always there for me when i needed you most'. </i> With these lyrics, I realized that life is uncertain,            <!-- Short Description -->
+                   you'll never know when or if you are going to lose your loved ones, especially since the pandemic happened. I realized that,
+                   it's really important to be there & spend time with the people you love while they're still here, and not take them for granted. 
+                </p> <!-- Short Description -->
+                <h3>2/3</h3> <!-- Slide number indicator -->
             </div>
         </div>
-
-        <div class="slide animate three">
-
-            <video src="../assets/video1.mp4" controls>
-
-            </video>
-
-            <div class="text">
-                <h1>The One That<br>Got Away</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                <h3>3/3</h3>
+        <!-- Song cover #3 -->
+        <div class="slide animate three"> <!-- Linking the class slide animate three -->
+            <!-- Video -->
+            <video src="../assets/the one that got away.mp4" controls></video> <!-- Linking the video -->
+            <!-- Song cover details-->
+            <div class="text"> <!-- Div containing texts & text class -->
+                <h1>The One That<br>Got Away</h1> <!-- Title -->
+                <p>Urban dictionary says that <i>'The One That Got Away'</i> pertains to the person who you originally want to end up with, but due to a cause of fate
+                   or by consequences, the relationship failed, and as time goes by you wonder what you and that person could have been, making them the one              <!-- Short Description -->
+                   that got away. If I would dedicate this song, I would dedicate it to my loved ones that I've lost. Continuing to live life without them is
+                   hard & makes me wonder, maybe in another lifetime or timeline, we'll be reunited ..and there, we'll be able to keep our promises.
+                </p> <!-- Short Description -->
+                <h3>3/3</h3> <!-- Slide number indicator -->
             </div>
         </div>
-
-        <a class="prev" onclick="prevSlide()">&#10094;</a>
-        <a class="next" onclick="nextSlide()">&#10095;</a>
+        <!-- Slideshow navigators -->
+        <a class="prev" onclick="prevSlide()">&#10094;</a> <!-- Prev anchor tag with prevSlide() from slideshow_manual.js -->
+        <a class="next" onclick="nextSlide()">&#10095;</a> <!-- Next anchor tag with nextSlide() from slideshow_manual.js -->
     </div>
-
-    <script src="../javascript/slideshow_manual.js"></script>
-
+    <!-- Javascripts links used -->
+    <script src="../javascript/slideshow_manual.js"></script> <!-- Link to use slideshow_manual.js -->
 </body>
 </html>

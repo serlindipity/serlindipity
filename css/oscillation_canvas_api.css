@@ -1,0 +1,32 @@
+/* OSCILLATION CANVAS API - CSS DESIGN */
+/* Importing fonts needed */
+@import url("https://fonts.googleapis.com/css?family=VT323");
+/* CSS design for the body */
+body {
+    font-family: "VT323", system-ui, monospace;
+}
+/* CSS design for canvas */
+#oscillation_interaction{
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+/* CSS design for interactive_sliders */
+#interactive_sliders {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: centers;
+  text-align: center;
+  margin: 0 auto;
+}
+/* CSS design for paragraph in interactive_sliders */
+#interactive_sliders p {
+  margin: 5px auto;
+  width: 300px;
+  cursor: pointer;
+}
+/* CSS design for title */
+#title {
+  text-align: center;
+}

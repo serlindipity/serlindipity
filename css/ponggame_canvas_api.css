@@ -1,0 +1,35 @@
+/* PONGGAME API - CSS DESIGN */
+/* Importing fonts needed */
+@import url("https://fonts.googleapis.com/css?family=VT323");
+/* CSS design for canvas */
+canvas{
+	background:transparent;
+	display:block;
+	margin:0 auto;
+	border: none;
+}
+/* CSS design for pong_game id */
+#pong_game{
+	width:800px;
+	height:950px;
+}
+/* CSS design for startBtn id */
+#startBtn{
+	display:block;
+	margin:10px auto;
+	border: none;
+	outline: none;
+	font-size:23px;
+	font-family: "VT323", system-ui, monospace;
+	background-color: transparent;
+	color:white;		
+	cursor: pointer;
+}
+/* CSS design for the bold text in startBtn */
+#startBtn b{
+	display: none;
+}
+/* CSS hover design for the bold text in startBtn */
+#startBtn:hover b{
+	display: inline-block;
+}
